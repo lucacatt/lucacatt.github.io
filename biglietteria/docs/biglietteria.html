@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biglietteria</title>
+    <script type="text/javascript" src="../js/cassa.js"></script>
+</head>
+
+<body>
+    <h1>Biglietteria</h1>
+    <form>
+        <p>Km: <input type="number" min="0" id="km"></p>
+        <p>Posti:
+            <select id="posti">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </p>
+        <input type="radio" id="1classe" name="classe">
+        <label for="1classe">1° Classe</label>
+        <input type="radio" id="2classe" name="classe">
+        <label for="2classe">2° Classe</label>
+        <p><input type="button" value="Calcola" onclick="calcola()"></p>
+        <p id="esito"></p>
+    </form>
+</body>
+
+</html>
