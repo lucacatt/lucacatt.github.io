@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calcolo peso</title>
+    <script type="text/javascript" src="../js/formule.js"></script>
+</head>
+
+<body>
+    <h1>Calcolo del peso forma</h1>
+    <form>
+        <p>Altezza: <input type="number" min="0" id="altezza"></p>
+        <p>Età <input type="number" min="0" id="eta"></p>
+        <p>Sesso:
+            <select id="sesso">
+                <option>maschio</option>
+                <option>femmina</option>
+            </select>
+        </p>
+        <p>Calcola peso con formula di Lorenz <input type="button" value="Calcola" onclick="pesoLorenz()"></p>
+        <p id="esito1"></p><br>
+        <p>Calcola peso con formula di Broca <input type="button" value="Calcola" onclick="pesoBroca()"></p>
+        <p id="esitob"></p><br>
+        <p>Calcola peso con formula di Wan der Vael <input type="button" value="Calcola" onclick="pesoWan()"></p>
+        <p id="esitow"></p><br>
+        <p>Calcola peso con formula BMI</p>
+        <p>Peso: <input type="number" min="0" id="peso"> <input type="button" value="Calcola" onclick="pesobmi()">
+        </p>
+        <p id="esitobmi"></p><br>
+    </form>
+</body>
+
+</html>
