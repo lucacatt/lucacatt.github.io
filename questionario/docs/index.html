@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Questionario</title>
+    <script type="text/javascript" src="../js/controllo.js"></script>
+</head>
+
+<body>
+    <p>Dati anagrafici</p>
+    <p>Cognome: <input type="text" id="cognome"> Nome: <input type="text" id="nome"></p>
+    <p>Data di nascita</p>
+    <p>Giorno: <input type="text" id="giorno">
+        Mese:
+        <select id="mese">
+            <option>GEN</option>
+            <option>FEB</option>
+            <option>MAR</option>
+            <option>APR</option>
+            <option>MAG</option>
+            <option>GIU</option>
+            <option>LUG</option>
+            <option>AGO</option>
+            <option>SET</option>
+            <option>OTT</option>
+            <option>NOV</option>
+            <option>DIC</option>
+
+        </select>
+        Anno: <input type="number" min="0" id="anno">
+    </p>
+    <form>
+        <fieldset>
+            <legend>Domande</legend>
+            <p>Qual è il linguaggio di programmazione utilizzato per creare e modificare i database?(in maiuscolo)
+                <br> <input type="text" id="linguaggio">
+            </p>
+            <p>Quanti valori può assumere una variabile booleana?
+                <br><select id="bool">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>4</option>
+                    <option>256</option>
+                </select>
+            </p>
+            <p>Quali sono le librerie caricate a run-time?
+                <br> <input type="radio" id="risp1" name="risposte">
+                <label for="risp1">Statiche</label>
+                <br> <input type="radio" id="risp2" name="risposte">
+                <label for="risp2">Dinamiche</label>
+            </p>
+            <p>Quali tra queste sono parole chiave in C++
+                <br><input type="checkbox" id="chiave1" name="chiave">
+                <label for="chiave1">void</label>
+                <br><input type="checkbox" id="chiave2" name="chiave">
+                <label for="chiave2">integer</label>
+                <br><input type="checkbox" id="chiave3" name="chiave">
+                <label for="chiave3">char</label>
+            </p>
+            <p>8 bit corrispondono a un...
+                <br> <input type="text" id="bit">
+            </p>
+        </fieldset>
+        <input type="button" value="Elabora" onclick="elabora()">&nbsp<input type="reset" value="Cancella">
+        <br>
+        <fieldset style="float:left;width:29%;">
+            <legend>Esito</legend>
+            Punteggio: <input type="text" id="punti">
+        </fieldset>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="button"
+            value="  Utente con punteggio" onclick="codice()">&nbsp<input type="text" id="puntiUtente">
+    </form>
+</body>
+
+</html>
