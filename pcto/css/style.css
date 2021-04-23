@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(255, 168, 97);
+}
+.divDescrizione{
+    margin-left:50px;
+    margin-right:50px;
+    border: 12px solid rgb(255, 255, 255);
+    padding: 10px;
+    background-color: rgb(255, 168, 97);
+}
+h1{
+    text-align: center;
+}
+ul{
+    margin-left:50px;
+    margin-right:50px;
+}
+a{
+    color:black;
+    font-weight: bold;
+    font-size: 120%;
+}
