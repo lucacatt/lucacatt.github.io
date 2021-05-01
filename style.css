@@ -33,7 +33,7 @@ html {
     box-shadow:0 0 .25em rgba(0,0,0,.25);
     box-sizing:border-box;
     left:50%;
-    padding:10%;
+    padding:6%;
     position:fixed;
     text-align:center;
     top:50%;
@@ -53,6 +53,11 @@ html {
     }
   }
   
-  a{
-    color: black;
-}
+  a { 
+    text-decoration: none; color: #333;
+   } 
+
+  a:hover { 
+    text-decoration: underline; 
+    color: #0080FF; 
+  }
