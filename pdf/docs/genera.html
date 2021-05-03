@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="../js/creaPdf.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Crea PDF</title>
+</head>
+
+<body>
+    <h1>Creare un PDF</h1>
+    <form>
+        <p>Inserire il nome:<input type="text" class="affiancato" id="nome"></p>
+        <p>Inserire il cognome:<input type="text" class="affiancato" id="cognome"></p>
+        <p>Inserire il numero:<input type="number" class="affiancato" id="numero"></p>
+        <p>Inserire l'email:<input type="text" class="affiancato" id="email"></p>
+        <p>Inserire il messaggio:
+            <br>
+            <br>
+            <input type="text" class="mex" id="messaggio">
+        </p>
+        <p>Clicca il bottone per scaricare il PDF: <input type="button" onclick="creaPdf()" value="Genera"></p>
+    </form>
+</body>
+
+</html>
