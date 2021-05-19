@@ -32,7 +32,7 @@ function elabora() {
     if (bool == "2") {
         punti++;
     }
-    if (document.getElementById("risp1").checked) {
+    if (document.getElementById("statiche").value == "Statiche") {
         punti++;
     }
     if (document.getElementById("chiave1").checked && document.getElementById("chiave3").checked) {
